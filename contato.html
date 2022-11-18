@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Metadados-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site para Desenvolvimento Web">
+    <meta name="keywords" content="Site, para, Desenvolvimento, Web">
+    <meta name="author" content="Leticia Silva">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/fonte.js"></script>
+<!--Titulo-->
+<title>Plano de Trabalho</title>
+</head>
+<body>
+    <header>
+        <!--Logo-->
+        <div id="logo">
+            <a href="index.html" title="página inicial">
+                <img src="imagem/logo.png" alt="Logo nas cores preto e vermelho">
+            </a>
+        </div>
+        <!--menu responsivo-->  
+        <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
+        <input type="checkbox" id="bt_menu">
+        <!--menu responsivo-->  
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contato.html">Plano de Trabalho</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Conteúdo-->
+    <main id="form">
+        <!--Breadcrumb-->
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>Plano de Trabalho</li>
+        </ul>
+        <hr id="conteudo">
+        <h1>Cadastro de Plano de Trabalho</h1>
+        <form name="Contato" id="contato" method="post">
+            <fieldset id="fieldset">
+                <legend>Cadastro</legend>
+                <label for="assunto" class="required">Nome</label><br>
+                <textarea type="text-area" name="nome" class="mensagemum" placeholder="Nome do Cadastro" rows="10" required></textarea>
+                <label for="mensagem" class="required">Descrição</label><br>
+                <textarea type="text-area" name="descricao" class="mensagemdois" placeholder="Descrição do Cadastro" rows="10" required></textarea>
+            </fieldset>
+            <div class="buttons">
+                <input type="submit" value="Enviar" name="enviar" id="enviar"><input type="reset" value="Limpar" name="limpar" id="limpar">
+            </div>
+        </form>
+    </main>
+    <!--Rodapé-->
+    <footer id="rodape">
+        <p>Desenvolvido por Leticia Silva. Todos os direitos reservados &copy; 2021.</p>
+    </footer>
+</body>
+</html>
